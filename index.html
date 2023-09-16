@@ -9,39 +9,41 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             background-color: black;
             background-image: url(imgs/tech-bg.png);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        div.corpo {
-            height: calc(100vh - 100px);
-            width: 100%;
+        .corpo {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
 
         h1 {
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-shadow: 2px 2px 2px black;
-            padding: 20px;
             color: white;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
-        div.links {
-            height: 100px;
-            width: 500px;
-            margin: auto;
-            margin-bottom: 25px;
+        .links {
+            width: 100%;
+            max-width: 500px;
             background-color: rgba(255, 255, 255, 0.5);
             border: 5px solid black;
+            margin-bottom: 20px;
         }
 
         a {
-            display: inline-block;
-            width: 500px;
+            display: block;
             text-align: center;
             line-height: 100px;
             text-decoration: none;
@@ -52,37 +54,41 @@
 
         a:hover {
             color: white;
-            transition: .5s;
         }
 
         img {
-            display: block;
-            margin: auto;
-            width: 500px;
+            max-width: 100%;
+            height: auto;
             border: 5px solid black;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         p.base {
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            box-sizing: border-box;
             height: 100px;
             line-height: 50px;
-            padding: 20px;
             color: rgb(237, 237, 65);
             text-align: center;
             background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .corpo {
+                padding: 10px;
+            }
+            .links {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="corpo">
-    <h1>Bem-vindo ao site de Rafa "Game of de year" Gusmão!</h1>
-    <div class="links">
-    <a href="https://rafagoty.github.io/quimicaindustrial/">Química Industrial</a>
+        <h1>Bem-vindo ao site de Rafa "Game of de year" Gusmão!</h1>
+        <div class="links">
+            <a href="https://rafagoty.github.io/quimicaindustrial/">Química Industrial</a>
+        </div>
+        <img src="imgs/kratos.gif" alt="Gif animado do Kratos.">
     </div>
-    <img src="imgs/kratos.gif" alt="Gif animado do Kratos.">
-</div> 
-<p class="base">Este site foi totalmente criado por Rafael Gusmão.</p>  
+    <p class="base">Este site foi totalmente criado por Rafael Gusmão.</p>
 </body>
 </html>
