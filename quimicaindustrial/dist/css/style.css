@@ -1068,7 +1068,7 @@ p.texto-topico {
 }
 
 .parallax {
-    background-image: url("/imgs/plastico.jpg");
+    background-image: url("../../imgs/plastico.jpg");
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
