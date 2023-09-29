@@ -1067,8 +1067,28 @@ p.texto-topico {
     height: 100%;
 }
 
-.parallax {
+.parallax-plastico {
     background-image: url("../../imgs/plastico.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 2px #5c5c5c;
+}
+
+.parallax-limpeza {
+    background-image: url("../../imgs/limpeza.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 2px #5c5c5c;
+}
+
+.parallax-engenharia {
+    background-image: url("../../imgs/engenharia.jpg");
     min-height: 300px;
     background-attachment: fixed;
     background-position: center;
